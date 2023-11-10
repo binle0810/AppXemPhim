@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nation_item1"
+        android:title="Việt Nam"/>
+    <item android:id="@+id/nation_item2"
+        android:title="Thái Lan"/>
+    <item android:id="@+id/nation_item3"
+        android:title="Hàn Quốc"/>
+    <item android:id="@+id/nation_item4"
+        android:title="Mỹ"/>
+    <item android:id="@+id/nation_item5"
+        android:title="Hong Kong"/>
+    <item android:id="@+id/nation_item6"
+        android:title="Châu Âu"/>
+</menu>

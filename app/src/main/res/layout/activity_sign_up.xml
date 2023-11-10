@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/radial"
+    tools:context=".Activities.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/icon_film" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="SIGN UP"
+            android:textAlignment="center"
+            android:textColor="@color/Maroon"
+            android:textSize="40sp"
+            android:fontFamily="@font/baloo"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiplayout_signup_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            app:errorTextColor="@color/Maroon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_signup_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Maroon"
+                android:elegantTextHeight="false"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:maxLength="100"
+                android:textSize="20dp"
+                android:textColorHint="@color/White"
+                android:textColor="@color/Black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiplayout_signup_user_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            app:errorTextColor="@color/Maroon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_signup_user_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Maroon"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:hint="Birthday"
+                android:inputType="date"
+                android:maxLength="100"
+                android:textSize="20dp"
+                android:textColorHint="@color/White"
+                android:textColor="@color/Black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiplayout_signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            app:errorTextColor="@color/Maroon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Maroon"
+                android:elegantTextHeight="false"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="100"
+                android:textSize="20dp"
+                android:textColorHint="@color/White"
+                android:textColor="@color/Black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tiplayout_signup_password"
+            android:layout_height="90dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/WhiteSmoke"
+            app:counterEnabled="true"
+            app:counterTextColor="@color/WhiteSmoke"
+            app:counterMaxLength="20"
+            app:errorTextColor="@color/Maroon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Red"
+                android:elegantTextHeight="false"
+                android:id="@+id/edittext_signup_password"
+                android:textColor="@color/Black"
+                android:hint="Password"
+                android:maxLength="20"
+                android:inputType="textPassword"
+                android:textColorHint="@color/White"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/tiplayout_signup_confirm_password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/White"
+            app:counterEnabled="true"
+            app:counterTextColor="@color/WhiteSmoke"
+            app:counterMaxLength="20"
+            app:errorTextColor="@color/Maroon"
+>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Maroon"
+                android:elegantTextHeight="false"
+                android:id="@+id/edittext_signup_confirm_password"
+                android:textColor="@color/Black"
+                android:hint="Comfirm Your Password"
+                android:maxLength="20"
+                android:inputType="textPassword"
+                android:textColorHint="@color/White"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="Admin"
+            android:textColor="@color/Black"/>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/Maroon"
+            android:text="Sign up"
+            android:fontFamily="@font/baloo"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="18dp"
+
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have an account?"
+                android:textAlignment="center"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/tv_login"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:textAlignment="center"
+                android:textColor="@color/Maroon"
+                android:textStyle="bold"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

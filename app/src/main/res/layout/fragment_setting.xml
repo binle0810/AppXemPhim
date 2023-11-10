@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.SettingFragment"
+    android:background="@drawable/radial">
+
+    <Button
+        android:id="@+id/btn_shareapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Maroon"
+        android:drawableLeft="@android:drawable/ic_menu_share"
+        android:drawableRight="@drawable/ic_arrow_right_"
+        android:drawablePadding="15dp"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        android:text="Chia sẻ"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btn_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Maroon"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:drawableRight="@drawable/ic_arrow_right_"
+        android:drawablePadding="15dp"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        android:text="Đánh giá"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
+    <LinearLayout
+        android:id="@+id/linearLayout_add_movies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/btn_add_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Maroon"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawableRight="@drawable/ic_arrow_right_"
+            android:drawablePadding="15dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            android:text="Thêm phim (Admin)"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
